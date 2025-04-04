@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knot Flashcards</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+    .card {
+      width: 90%;
+      max-width: 400px;
+      min-height: 300px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.5s;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .controls {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" id="flashcard" onclick="flipCard()">
+    <div id="cardFront"></div>
+    <div id="cardBack" style="display: none;"></div>
+  </div>
+  <div class="controls">
+    <button onclick="prevCard()">Previous</button>
+    <button onclick="nextCard()">Next</button>
+    <button onclick="shuffleCards()">Shuffle</button>
+  </div>
+
+  <script>
+    const cards = [
+      {
+        name: "Bowline",
+        image: "https://www.animatedknots.com/media/knots/bowline/bowline.jpg",
+        description: "Creates a fixed loop that won’t slip. Useful for rescue, sailing, and securing lines under tension.",
+        link: "https://www.animatedknots.com/bowline-knot"
+      },
+      {
+        name: "Square Knot",
+        image: "https://www.animatedknots.com/media/knots/squareknot/squareknot.jpg",
+        description: "Used to tie two ropes of equal diameter together. Good for bundling but not load-bearing.",
+        link: "https://www.animatedknots.com/square-knot"
+      },
+      {
+        name: "Clove Hitch",
+        image: "https://www.animatedknots.com/media/knots/clovehitch/clovehitch.jpg",
+        description: "Quick hitch used to attach rope to poles or posts. Not reliable under shifting loads.",
+        link: "https://www.animatedknots.com/clove-hitch"
+      }
+    ];
+
+    let currentIndex = 0;
+    let flipped = false;
+
+    function renderCard() {
+      const front = document.getElementById("cardFront");
+      const back = document.getElementById("cardBack");
+      const card = cards[currentIndex];
+
+      front.innerHTML = `<h2>${card.name}</h2>`;
+      back.innerHTML = `
+        <img src="${card.image}" alt="${card.name}">
+        <p>${card.description}</p>
+        <a href="${card.link}" target="_blank">View animation</a>
+      `;
+
+      flipped = false;
+      front.style.display = "block";
+      back.style.display = "none";
+    }
+
+    function flipCard() {
+      const front = document.getElementById("cardFront");
+      const back = document.getElementById("cardBack");
+      if (flipped) {
+        front.style.display = "block";
+        back.style.display = "none";
+      } else {
+        front.style.display = "none";
+        back.style.display = "block";
+      }
+      flipped = !flipped;
+    }
+
+    function nextCard() {
+      currentIndex = (currentIndex + 1) % cards.length;
+      renderCard();
+    }
+
+    function prevCard() {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      renderCard();
+    }
+
+    function shuffleCards() {
+      for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+      }
+      currentIndex = 0;
+      renderCard();
+    }
+
+    // Initial render
+    renderCard();
+  </script>
+</body>
+</html>
