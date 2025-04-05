@@ -69,23 +69,110 @@
   <script>
     const cards = [
       {
-        name: "Bowline",
-        image: "https://www.animatedknots.com/media/knots/bowline/bowline.jpg",
-        description: "Creates a fixed loop that won’t slip. Useful for rescue, sailing, and securing lines under tension.",
-        link: "https://www.animatedknots.com/bowline-knot"
+        name: "Overhand Knot",
+        image: "https://www.animatedknots.com/photos/overhand/overhandR6.jpg",
+        description: "Uses: Tie-off for backup",
+        animationLink: "https://www.animatedknots.com/overhand-knot",
+        videoLink: "https://youtu.be/I0ShGbIR0ZI?si=xXNimtQjYEh7Nelo"
       },
       {
         name: "Square Knot",
-        image: "https://www.animatedknots.com/media/knots/squareknot/squareknot.jpg",
-        description: "Used to tie two ropes of equal diameter together. Good for bundling but not load-bearing.",
-        link: "https://www.animatedknots.com/square-knot"
+        image: "https://www.animatedknots.com/photos/reef/reefR7.jpg",
+        description: "Uses: ASRC seat harness",
+        animationLink: "https://www.animatedknots.com/square-knot",
+        videoLink: "https://youtu.be/0Y_iorha2k4?si=8yPzKLCX5_2_JF8s"
+      },
+      {
+        name: "Water Knot",
+        image: "https://www.animatedknots.com/photos/waterknot/waterknotR12.jpg",
+        description: "Uses: Join ends of webbing",
+        animationLink: "https://www.animatedknots.com/water-knot",
+        videoLink: "https://youtu.be/sO20BG1dkb0?si=icYBJth-cdgIUH_n"
+      },
+      {
+        name: "Bowline Knot",
+        image: "https://www.animatedknots.com/photos/bowline/bowlineR7.jpg",
+        description: "Uses: Tie a loop in the end of a rope",
+        animationLink: "https://www.animatedknots.com/bowline-knot",
+        videoLink: "https://youtu.be/YXRnPES0Qec?si=adnRGNbG_RewO07V"
+      },
+      {
+        name: "Figure-8 Follow-Through",
+        image: "https://www.animatedknots.com/photos/fig8follow/fig8followR9.jpg",
+        description: "Uses: Tie a loop around an object; tensionless anchor",
+        animationLink: "https://www.animatedknots.com/figure-8-follow-through-loop-knot",
+        videoLink: "https://youtu.be/aLopeVBb7yU?si=XeGnTn_-gzMjgBqT"
+      },
+      {
+        name: "Figure-8 Loop / Figure-8 on a Bight",
+        image: "https://knots3d.com/en/image/knots/figure-eight-loop-knot.webp",
+        description: "Uses: Attach carabiner to end of rope",
+        animationLink: "",
+        videoLink: "https://youtu.be/D8jRok7Kofw?si=1Ap5vLWF2PvEoxTs"
+      },
+      {
+        name: "Figure-8 Bend",
+        image: "https://www.animatedknots.com/photos/fig8join/fig8joinR10.jpg",
+        description: "Uses: Join 2 ropes",
+        animationLink: "https://www.animatedknots.com/figure-8-bend-knot",
+        videoLink: "https://youtu.be/w6x-TK6L2Tk?si=hUd1QesMc8guBYx6"
+      },
+      {
+        name: "Double Loop Figure-8",
+        image: "https://www.animatedknots.com/photos/fig8loopdouble/fig8loopdoubleR13.jpg",
+        description: "Uses: Same as Figure-8 Loop; attach rope to litter",
+        animationLink: "https://www.animatedknots.com/figure-8-double-loop-knot",
+        videoLink: "https://youtu.be/_DPYEPxtjF0?si=_5XdFPLuK5i5xoNM"
+      },
+      {
+        name: "Barrel Knot",
+        image: "https://www.animatedknots.com/photos/doubleoverhand/doubleoverhandR8.jpg",
+        description: "Uses: Tie-off for backup",
+        animationLink: "https://www.animatedknots.com/double-overhand-stopper-knot",
+        videoLink: "https://youtu.be/7Eso8q84aCc?si=mUKoyAj-WP-a9bNF"
+      },
+      {
+        name: "Double Fisherman's Knot",
+        image: "https://www.animatedknots.com/photos/doublefishermans/doublefishermansR16.jpg",
+        description: "Uses: Join 2 ropes; Prusik Loops",
+        animationLink: "https://www.animatedknots.com/double-fishermans-bend-knot",
+        videoLink: "https://youtu.be/O6oJwedcb18?si=vd9xHdvxtti3i9QQ"
+      },
+      {
+        name: "Prusik Knot - 2 Wrap",
+        image: "https://www.guidedolomiti.com/wp-content/uploads/nodo-alpinismo-prusik.webp",
+        description: "Uses: Climb a rope; haul team rope tie-in",
+        animationLink: "",
+        videoLink: ""
+      },
+      {
+        name: "Prusik Knot - 3 Wrap",
+        image: "https://www.animatedknots.com/photos/prusik/prusikR8.jpg",
+        description: "Uses: Safety; climb a rope; haul rope tie-in",
+        animationLink: "https://www.animatedknots.com/prusik-knot",
+        videoLink: "https://youtu.be/CP7iAF_YU7A?si=1bS6y1gFsh66r6XO"
+      },
+      {
+        name: "Girth Hitch",
+        image: "https://www.animatedknots.com/photos/girth/girthR6.jpg",
+        description: "Uses: Webbing anchor",
+        animationLink: "https://www.animatedknots.com/girth-hitch-knot",
+        videoLink: "https://youtu.be/blP6BL05Q34?si=p4MFqwXJHEY7cdSM"
+      },
+      {
+        name: "Taut-line Hitch",
+        image: "https://www.livealifetodiefor.co.uk/wp-content/uploads/2024/01/Tautline-Hitch-rotated.jpg",
+        description: "Uses: Hold tension on tent lines and other tie-downs (e.g. radio antenna)",
+        animationLink: "",
+        videoLink: "https://youtu.be/GTi6j7d16Xc?si=Tz0lcTjx0j_RalAz"
       },
       {
         name: "Clove Hitch",
-        image: "https://www.animatedknots.com/media/knots/clovehitch/clovehitch.jpg",
-        description: "Quick hitch used to attach rope to poles or posts. Not reliable under shifting loads.",
-        link: "https://www.animatedknots.com/clove-hitch"
-      }
+        image: "https://www.animatedknots.com/photos/clove/cloveR6.jpg",
+        description: "Simple (weak) hitch to attach a rope to a pole or ring",
+        animationLink: "https://www.animatedknots.com/clove-hitch-knot-using-loops",
+        videoLink: "https://youtu.be/pMRTmEZ4-JU?si=U4y2h6GSF6Fum8-7"
+      },
     ];
 
     let currentIndex = 0;
@@ -100,7 +187,8 @@
       back.innerHTML = `
         <img src="${card.image}" alt="${card.name}">
         <p>${card.description}</p>
-        <a href="${card.link}" target="_blank">View animation</a>
+        <a href="${card.animationLink}" target="_blank">View animation</a>
+        <a href="${card.videoLink}" target="_blank">Watch video</a>
       `;
 
       flipped = false;
@@ -132,10 +220,20 @@
     }
 
     function shuffleCards() {
+      const currentCard = cards[currentIndex];
+
+      // Shuffle
       for (let i = cards.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [cards[i], cards[j]] = [cards[j], cards[i]];
       }
+
+      // Find new index that isn't the same as before
+      if (cards[0].name === currentCard.name && cards.length > 1) {
+        // Swap the first two cards if they're the same
+        [cards[0], cards[1]] = [cards[1], cards[0]];
+      }
+
       currentIndex = 0;
       renderCard();
     }
