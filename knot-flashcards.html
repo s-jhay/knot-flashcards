@@ -11,14 +11,15 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       background: #f0f0f0;
+      padding: 1rem;
     }
     .card {
       width: 90%;
       max-width: 400px;
-      min-height: 300px;
+      min-height: 50vh;
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,6 +31,7 @@
       text-align: center;
       cursor: pointer;
       transition: transform 0.5s;
+      overflow-y: auto;
     }
     .card img {
       max-width: 100%;
@@ -39,6 +41,8 @@
       margin-top: 1rem;
       display: flex;
       gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     button {
       padding: 0.5rem 1rem;
@@ -49,9 +53,16 @@
       color: white;
       cursor: pointer;
     }
+    button:focus,
+    button:active {
+      outline: none;
+      background-color: #0056b3;
+    }
     a {
       color: #007bff;
       text-decoration: none;
+      display: block;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
@@ -178,27 +189,41 @@
     let currentIndex = 0;
     let flipped = false;
 
+    function getFrontElement() {
+      return document.getElementById("cardFront");
+    }
+
+    function getBackElement() {
+      return document.getElementById("cardBack");
+    }
+
     function renderCard() {
-      const front = document.getElementById("cardFront");
-      const back = document.getElementById("cardBack");
+      const front = getFrontElement();
+      const back = getBackElement();
       const card = cards[currentIndex];
 
       front.innerHTML = `<h2>${card.name}</h2>`;
       back.innerHTML = `
         <img src="${card.image}" alt="${card.name}">
         <p>${card.description}</p>
-        <a href="${card.animationLink}" target="_blank">View animation</a>
-        <a href="${card.videoLink}" target="_blank">Watch video</a>
+        <a href="${card.animationLink}" target="_blank" rel="noopener noreferrer">View animation</a>
+        <a href="${card.videoLink}" target="_blank" rel="noopener noreferrer">Watch video</a>
       `;
 
+      resetFlip();
+    }
+
+    function resetFlip() {
+      const front = getFrontElement();
+      const back = getBackElement();
       flipped = false;
       front.style.display = "block";
       back.style.display = "none";
     }
 
     function flipCard() {
-      const front = document.getElementById("cardFront");
-      const back = document.getElementById("cardBack");
+      const front = getFrontElement();
+      const back = getBackElement();
       if (flipped) {
         front.style.display = "block";
         back.style.display = "none";
@@ -222,15 +247,12 @@
     function shuffleCards() {
       const currentCard = cards[currentIndex];
 
-      // Shuffle
       for (let i = cards.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [cards[i], cards[j]] = [cards[j], cards[i]];
       }
 
-      // Find new index that isn't the same as before
       if (cards[0].name === currentCard.name && cards.length > 1) {
-        // Swap the first two cards if they're the same
         [cards[0], cards[1]] = [cards[1], cards[0]];
       }
 
@@ -238,7 +260,6 @@
       renderCard();
     }
 
-    // Initial render
     renderCard();
   </script>
 </body>
