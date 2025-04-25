@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Overhand Knot",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level III Requirement",
     "image": "https://www.animatedknots.com/photos/overhand/overhandR6.jpg",
     "description": "Uses: Tie-off for backup",
     "animationLink": "https://www.animatedknots.com/overhand-knot",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Square Knot",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level III Requirement",
     "image": "https://www.animatedknots.com/photos/reef/reefR7.jpg",
     "description": "Uses: ASRC seat harness",
     "animationLink": "https://www.animatedknots.com/square-knot",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Water Knot",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level III Requirement",
     "image": "https://www.animatedknots.com/photos/waterknot/waterknotR12.jpg",
     "description": "Uses: Join ends of webbing",
     "animationLink": "https://www.animatedknots.com/water-knot",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": "Bowline Knot",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level III Requirement",
     "image": "https://www.animatedknots.com/photos/bowline/bowlineR7.jpg",
     "description": "Uses: Tie a loop in the end of a rope",
     "animationLink": "https://www.animatedknots.com/bowline-knot",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Figure-8 Follow-Through",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level II Requirement",
     "image": "https://www.animatedknots.com/photos/fig8follow/fig8followR9.jpg",
     "description": "Uses: Tie a loop around an object; tensionless anchor",
     "animationLink": "https://www.animatedknots.com/figure-8-follow-through-loop-knot",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Figure-8 Loop / Figure-8 on a Bight",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level II Requirement",
     "image": "https://knots3d.com/en/image/knots/figure-eight-loop-knot.webp",
     "description": "Uses: Attach carabiner to end of rope",
     "animationLink": "",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "name": "Figure-8 Bend",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level II Requirement",
     "image": "https://www.animatedknots.com/photos/fig8join/fig8joinR10.jpg",
     "description": "Uses: Join 2 ropes",
     "animationLink": "https://www.animatedknots.com/figure-8-bend-knot",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "name": "Double Loop Figure-8",
-    "requirement": "Not Required",
+    "requirement": "SMRG Requirement",
     "image": "https://www.animatedknots.com/photos/fig8loopdouble/fig8loopdoubleR13.jpg",
     "description": "Uses: Same as Figure-8 Loop; attach rope to litter",
     "animationLink": "https://www.animatedknots.com/figure-8-double-loop-knot",
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "name": "Double Fisherman's Knot",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level III Requirement",
     "image": "https://www.animatedknots.com/photos/doublefishermans/doublefishermansR16.jpg",
     "description": "Uses: Join 2 ropes; Prusik Loops",
     "animationLink": "https://www.animatedknots.com/double-fishermans-bend-knot",
@@ -92,7 +92,7 @@
   {
     "id": 11,
     "name": "Prusik Knot - 2 Wrap",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level III Requirement",
     "image": "https://www.guidedolomiti.com/wp-content/uploads/nodo-alpinismo-prusik.webp",
     "description": "Uses: Climb a rope; haul team rope tie-in",
     "animationLink": "",
@@ -101,7 +101,7 @@
   {
     "id": 12,
     "name": "Prusik Knot - 3 Wrap",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level III Requirement",
     "image": "https://www.animatedknots.com/photos/prusik/prusikR8.jpg",
     "description": "Uses: Safety; climb a rope; haul rope tie-in",
     "animationLink": "https://www.animatedknots.com/prusik-knot",
@@ -110,7 +110,7 @@
   {
     "id": 13,
     "name": "Girth Hitch",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level III Requirement",
     "image": "https://www.animatedknots.com/photos/girth/girthR6.jpg",
     "description": "Uses: Webbing anchor",
     "animationLink": "https://www.animatedknots.com/girth-hitch-knot",
@@ -128,10 +128,74 @@
   {
     "id": 15,
     "name": "Clove Hitch",
-    "requirement": "Not Required",
+    "requirement": "ASRC Level III Requirement",
     "image": "https://www.animatedknots.com/photos/clove/cloveR6.jpg",
     "description": "Simple (weak) hitch to attach a rope to a pole or ring",
     "animationLink": "https://www.animatedknots.com/clove-hitch-knot-using-loops",
     "videoLink": "https://youtu.be/pMRTmEZ4-JU?si=U4y2h6GSF6Fum8-7"
+  },
+  {
+    "id": 16,
+    "name": "ASRC Seat Harness",
+    "requirement": "ASRC Level III Requirement",
+    "image": "https://i.ytimg.com/vi/_Wz9Ogy52Y0/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgXChOMA8=&rs=AOn4CLDgqVFxSTGNJltnYU795-LdTtVbdw",
+    "description": "Enables a temporary lifting harness seat to be constructed from a piece of webbing strapping",
+    "animationLink": "",
+    "videoLink": "https://youtu.be/UCTNLkx76ZY?si=5Jm_Y7wH6JU5IyIN"
+  },
+  {
+    "id": 17,
+    "name": "Wrap 3 Pull 2 Anchor",
+    "requirement": "SMRG Requirement",
+    "image": "https://images.squarespace-cdn.com/content/v1/5b5251575b409b5fa4744be6/1536559152584-8VT34P24R7BGSLLJRSCB/wrap+3+pull+2+anchor.png",
+    "description": "A quick efficient way to create a strong single point anchor system",
+    "animationLink": "",
+    "videoLink": "https://youtu.be/gPHytS3E0_E?si=wG9Y6ecGZDBBPaeA"
+  },
+  {
+    "id": 18,
+    "name": "Tensionless Anchor",
+    "requirement": "VDEM Requirement",
+    "image": "https://www.animatedknots.com/photos/tensionless/tensionlessR8.jpg",
+    "description": "Used to gain secure control of a loaded line by wrapping the rope around a post or tree several times",
+    "animationLink": "https://www.animatedknots.com/tensionless-hitch-knot",
+    "videoLink": "https://youtu.be/AEk7ub3dj0w?si=eXntheY7VYTl7RBE"
+  },
+  {
+    "id": 19,
+    "name": "Round Turn with Three Half Hitches",
+    "requirement": "VDEM Requirement",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Two_round_turns_and_three_half_hitches.png",
+    "description": "Is very useful for attaching a rope to a ring, bar or pole",
+    "animationLink": "https://www.animatedknots.com/round-turn-two-half-hitches-knot",
+    "videoLink": "https://www.youtube.com/watch?v=2Ssa22v4fxE"
+  },
+  {
+    "id": 20,
+    "name": "Munter Hitch",
+    "requirement": "Not Required",
+    "image": "https://www.cmcpro.com/wp-content/uploads/wd/landing_pages/Munter_Hitch-1024x701.jpg",
+    "description": "Is a simple adjustable knot, commonly used to control friction in a life-lining or belay system",
+    "animationLink": "",
+    "videoLink": "https://youtu.be/6HNCXTWojnI?si=ZIPkeyBL4kA8A7fQ"
+  },
+  {
+    "id": 21,
+    "name": "Trucker's Hitch",
+    "requirement": "Not Required",
+    "image": "https://www.animatedknots.com/photos/truckers/truckersR11.jpg",
+    "description": "Has the distinctive feature of providing a mechanical advantage when being tightened",
+    "animationLink": "https://www.animatedknots.com/truckers-hitch-knot",
+    "videoLink": "https://youtu.be/8N6blmw006U?si=7rL2K-UBtADCKEEd"
+  },
+  {
+    "id": 22,
+    "name": "Radium Release Hitch",
+    "requirement": "Not Required",
+    "image": "https://www.animatedknots.com/photos/radium/radiumR21.jpg",
+    "description": "Allows a load to be transferred from one rope to another",
+    "animationLink": "https://www.animatedknots.com/radium-release-hitch-knot",
+    "videoLink": "https://youtu.be/3t5ZSDd14Lg?si=2_Kn-9ZZLRAwnXCr"
   }
+
 ]
